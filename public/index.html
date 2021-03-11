@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soil and Mulch Volume Calculator</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <header>
+    <a href="http://www.phelangardens.com"><img id="header-logo" src="logo.png" width="120px" height="120px"></a>
+    <h1>Soil Calculator</h2>
+  </header>
+  <p>
+    Please use ft for all units. Bags are labeled as cubic feet and other units are currently not supported by this calculator.
+  </p>
+  <h2>Fill volume</h2>
+  <div id="calculator">
+    <div id="volume-input">
+      <label htmlFor="fill-length">Length (ft)</label>
+      <input type="number" id="fill-length" oninput="onTextChange(event)">
+      <label htmlFor="fill-width">Width (ft)</label>
+      <input type="number" id="fill-width" oninput="onTextChange(event)">
+      <label htmlFor="fill-height">Height (ft)</label>
+      <input type="number" id="fill-height" oninput="onTextChange(event)">
+      <label htmlFor="calculated-volume" id="calculated-volume-label">Total volume</label>
+      <div id="calculated-volume"></div>
+    </div>
+    <h2>Bag size (ft<sup>3</sup>)</h2>
+    <input type="number" id="bag-size" oninput="onTextChange(event)">
+    <h2>Number of bags needed</h2>
+    <div id="calculated-bags"></div>
+  </div>
+  <script src="main.js"></script>
+
+  <!-- Navigation warning -->
+  <script type="text/javascript">
+    window.onbeforeunload = () => {
+      return true;
+    }
+  </script>
+</body>
+</html>

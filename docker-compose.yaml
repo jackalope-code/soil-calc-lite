@@ -1,0 +1,12 @@
+version: '3'
+
+# TODO: nginx URL resolution, HTTPS?
+services:
+  app:
+    image: nginx
+    restart: always
+    ports:
+      - 80:80
+    volumes:
+      - ./public:/usr/share/nginx/html
+
