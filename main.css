@@ -1,13 +1,39 @@
 /* TODO: Move component CSS into individual elements to make this more modular */
 
-#volume-input > input{
-  display: block;
+* {
+  box-sizing: border-box;
+}
+
+input {
+  padding: 3px;
+}
+
+.calculator-field {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.calculator-field > input {
   margin-bottom: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.calculator-field > label {
+  margin-left: 15px;
 }
 
 #calculated-volume-label {
   font-weight: 600;
   font-size: 1.5em;
+}
+
+#volume-input > h3 {
+  margin-bottom: 5px;
+  margin-top: 0px;
 }
 
 #volume-input {
