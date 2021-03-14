@@ -14,10 +14,9 @@ const fields = [
 ];
 
 fields.map((fieldName) => {
-  // TODO: this is just kind of a hack for an array of default values
-  let defaultValue = undefined;
-  if(fieldName.includes('inches')) {
-    defaultValue = 0;  
+  let defaultValue = 0;
+  if(fieldName.includes('bag-size')) {
+    defaultValue = 1;  
   }
 
   fieldMap.set(fieldName, defaultValue);
