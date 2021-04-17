@@ -1,9 +1,11 @@
+import React from 'react';
+import CalculatorField from '../components/CalculatorField';
 
 const Calculator = (props) => {
-
   return (
     <form>
       <div>Placeholder</div>
+      <CalculatorField title='Length' fieldName='fill-length'></CalculatorField>
       {props.children}
     </form>
   )
